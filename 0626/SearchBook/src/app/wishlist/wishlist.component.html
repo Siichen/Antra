@@ -1,0 +1,7 @@
+<h4>Wishlist:</h4>
+<ul>
+  <li *ngFor="let book of wishlist$ | async">
+    {{ book.name }}
+  </li>
+  <!-- automatically subscribe and unsubscribe -->
+</ul>

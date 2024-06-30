@@ -1,0 +1,93 @@
+@media screen and (min-width: 600px) {
+  /* responsive screen */
+  .contentAll {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.containerCard {
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  background-color: #fff;
+  border-color: #cfd9de;
+  border-width: 1px;
+  padding: 12px;
+  size: 48px;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  /* just to make it more clear */
+}
+
+.photoPicture {
+  margin-bottom: 12px;
+  margin-right: 12px;
+}
+
+#photo {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 100%;
+}
+
+.contentAll {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* margin-left: 12px; */
+  margin-top: -12px;
+}
+
+.personalInfo {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: -12px; */
+  /* margin-bottom: 2px; */
+}
+
+.name {
+  margin-right: 4px;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.metaData {
+  color: #71767b;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.message {
+  display: flex;
+  color: #0f1419;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: relative;
+  margin-top: -30px;
+  margin-bottom: 12px;
+}
+
+.actionRow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a four-column layout */
+@media (max-width: 600px) {
+  .actionRow {
+    flex-direction: column;
+  }
+}
+
+.action {
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 85px;
+}
+
+.actionCount {
+  margin-left: 12px;
+}

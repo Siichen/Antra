@@ -1,0 +1,11 @@
+<div class="ratings">
+  <h2>Ratings:</h2>
+  <app-individual-rating
+    *ngFor="let rating of ratings"
+    [rating]="rating"
+  ></app-individual-rating>
+  <app-average-rating
+    [ratings]="ratings"
+    (averageRate)="calculateAverage($event)"
+  ></app-average-rating>
+</div>

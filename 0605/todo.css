@@ -1,0 +1,97 @@
+.bigBox {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.headBox {
+  background-color: #f44336;
+  text-align: center;
+  padding: 10px;
+}
+
+.headBox > h3 {
+  color: white;
+  /* font-family: "Times New Roman", Times, serif; */
+  position: relative;
+  top: -5px;
+}
+
+.headBox > div {
+  position: relative;
+  top: -20px;
+}
+
+.textBox input,
+button {
+  /* 没写逗号 */
+  height: 28px;
+}
+
+#inputBox {
+  width: 70%;
+  border-color: gray;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#addButton {
+  width: 15%;
+  position: relative;
+  right: 4px;
+  height: 32px;
+  color: rgb(99, 98, 98);
+  background-color: #d9d9d9;
+  border-style: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* 
+.headBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+} */
+
+ul {
+  /* clear all format */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  background-color: #eeeeee;
+  position: relative;
+  padding-left: 95px;
+  /* coloumn center */
+  line-height: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+ul li:hover {
+  background-color: #f57168;
+}
+
+.close {
+  /* display: inline-block; */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rebeccapurple;
+  border-radius: 100%;
+  border-color: red;
+  padding-right: 10px;
+  cursor: pointer;
+}

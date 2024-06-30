@@ -1,0 +1,23 @@
+<div>
+  <div class="heading">
+    <h3>Show me US cities</h3>
+  </div>
+  <div class="content">
+    <div class="input-box">
+      <input
+        type="text"
+        [(ngModel)]="input"
+        [placeholder]="placeHolder"
+        (input)="filterInput()"
+      />
+    </div>
+    <ul
+      *ngIf="showDropDown && filteredCities.length > 0"
+      class="showDropDownList"
+    >
+      <li *ngFor="let city of filteredCities">{{ city }}</li>
+    </ul>
+  </div>
+</div>
+<!-- (click)="dropDownList()" 这一段可以不要-->
+<!-- 使用 (click) 事件来触发 filterInput 方法在这种情况下是不合适的，因为 (click) 事件只会在用户点击输入框时触发，而不会在输入框的内容发生变化时触发。为了实现实时过滤功能，你需要使用 (input) 事件，因为 (input) 事件在输入框内容变化时会触发。 -->

@@ -1,0 +1,6 @@
+<h4>Booklist:</h4>
+<ul>
+  <li *ngFor="let book of booklist" (click)="onClick(book)">
+    {{ book.name }}
+  </li>
+</ul>
